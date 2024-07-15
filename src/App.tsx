@@ -77,6 +77,23 @@ const App: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const sendTapToServer = async () => {
+    console.log('Sending tap to server...'); // Add this line for debugging
+    try {
+      const response = await fetch('http://localhost:5000/tap', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ points: pointsToAdd, name: 'TestUser' }),
+      });
+      const data = await response.json();
+      console.log('Server response:', data); // Add this line for debugging
+    } catch (error) {
+      console.error('Error sending tap to server:', error);
+    }
+  };
+
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget;
     const rect = card.getBoundingClientRect();
@@ -89,6 +106,7 @@ const App: React.FC = () => {
 
     setPoints(points + pointsToAdd);
     setClicks([...clicks, { id: Date.now(), x: e.pageX, y: e.pageY }]);
+    sendTapToServer(); // Send the tap to the server
   };
 
   const handleAnimationEnd = (id: number) => {

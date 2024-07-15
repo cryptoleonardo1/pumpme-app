@@ -1,12 +1,16 @@
 import { IconProps } from "../utils/types";
 
-
 const Coins: React.FC<IconProps> = ({ size = 24, className = "" }) => {
-
     const svgSize = `${size}px`;
 
     return (
-        <svg fill="currentColor" className={className} height={svgSize} width={svgSize} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"></path></g></svg>
+        <svg fill="none" className={className} height={svgSize} width={svgSize} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M14 10.5C14 11.8807 11.7614 13 9 13C6.23858 13 4 11.8807 4 10.5M14 10.5C14 9.11929 11.7614 8 9 8C6.23858 8 4 9.11929 4 10.5M14 10.5V14.5M4 10.5V14.5M20 5.5C20 6.88071 17.7614 8 15 8C12.2386 8 10 6.88071 10 5.5M20 5.5C20 4.11929 17.7614 3 15 3C12.2386 3 10 4.11929 10 5.5M20 5.5V17.5C20 18.8807 17.7614 20 15 20C12.2386 20 10 18.8807 10 17.5V5.5M19.8184 11.5466C19.2834 11.9047 18.6062 12.1962 17.8184 12.3996M19.8184 14.5466C19.2834 14.9047 18.6062 15.1962 17.8184 15.3996M4 14.5C4 15.8807 6.23858 17 9 17C11.7614 17 14 15.8807 14 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+            </g>
+        </svg>
     );
 };
 
