@@ -6,9 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
+  root: '.', // Ensures Vite looks for index.html in the root directory
 })
