@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
   },
-  root: '.', // Ensures Vite looks for index.html in the root directory
 })

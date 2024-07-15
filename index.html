@@ -15,7 +15,7 @@
             background-color: black;
             font-family: Arial, sans-serif;
         }
-        .loading-text {
+        #loading {
             color: white;
             font-size: 48px;
             font-weight: bold;
@@ -28,11 +28,13 @@
         }
         #root {
             display: none;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div id="loading" class="loading-text">PUMPME</div>
+    <div id="loading">PUMPME</div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
